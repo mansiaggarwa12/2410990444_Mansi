@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 700px;
+    border: 2px solid black;
+    justify-items: center;
+    align-items: center;
+    align-content:stretch;
+}
+
+.item {
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    align-self: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 140px;
+}
+
+.container1{
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row;
+}
+.item1{
+    height: 40px;
+    width: 50px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.container2{
+    display: flex;
+     display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+    justify-items: center;
+    align-items: center;
+    align-content:stretch;
+    background-color: white
+    ;
+}
+.container2:hover{
+background-color: aquamarine;
+font-family: 'Lucida Handwriting';
+flex-wrap: wrap;
+/* rotate: z 90deg; */
+/* transform: translate(50px, 20px) ;transform: skew (30deg); */
+}
+.item2{
+    transition-duration: 5s;
+    transition-delay: 2s;
+    transition-property: all;
+}
+.item2:hover{
+background: red;
+transform: scale(1.1) rotate(30px);
+}
+.box {
+      width: 100px;
+      height: 100px;
+      background-color: royalblue;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin:20px;
+
+      animation-name: moveAndFade;
+      animation-duration: 4s;
+      animation-delay: 1s;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+      animation-play-state: running;
+    }
+     @keyframes moveAndFade {
+      0% {
+        left: 0;
+        top: 0;
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+      }
+      50% {
+        left: 150px;
+        opacity: 0.5;
+        transform: scale(1.3) rotate(180deg) ;
+        background-color: tomato;
+      }
+      
+      }
+    

@@ -1,0 +1,25 @@
+.abc {
+    @media(min-width:600px) {
+        div {
+            background-color: lightblue;
+            /*Q1*/
+        }
+    }
+
+    @media(min-width:600px)and (max-width: 1024px) {
+        div {
+            font-size: 20px;/*Q2*/
+        }
+    }
+    @media screen and (orientation: portrait){
+        nav{
+            display: none;/*Q3*/
+        }
+    }
+    @media screen and (max-width: 480px) {
+    img {
+        width: 100%;
+        height: auto;/*Q4*/
+    }
+}
+}
